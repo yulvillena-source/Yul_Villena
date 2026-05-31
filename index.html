@@ -1,61 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="bDA33q6nQFGPoge_9OnCliVemITJ7uRao_IiQWpxqBs" />
-  <title>Mi Página</title>
-  <style>
-    body{
-      font-family: Arial;
-      background:#f2f2f2;
-      text-align:center;
-      padding:40px;
-    }
 
-    .card{
-      background:white;
-      padding:30px;
-      border-radius:20px;
-      width:400px;
-      margin:auto;
-    }
+<title>Tu Nombre</title>
 
-    a{
-      display:block;
-      margin:10px;
-      padding:10px;
-      background:black;
-      color:white;
-      text-decoration:none;
-      border-radius:10px;
-    }
-  </style>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111111;
+    color:#e5e5e5;
+    font-family:Segoe UI, sans-serif;
+    line-height:1.7;
+}
+
+/* CONTENEDOR GENERAL */
+
+.container{
+    width:85%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* TITULO */
+
+header{
+    text-align:center;
+    padding:80px 0 60px;
+}
+
+header h1{
+    font-size:4rem;
+    font-weight:300;
+    letter-spacing:4px;
+    color:white;
+    text-transform:uppercase;
+}
+
+header p{
+    color:#9a9a9a;
+    margin-top:10px;
+    letter-spacing:2px;
+}
+
+/* TARJETA PERSONAL */
+
+.about{
+    position:relative;
+    background:#1b1b1b;
+    border:1px solid #333;
+    border-radius:20px;
+    padding:45px;
+    margin-bottom:70px;
+    overflow:hidden;
+}
+
+/* DECORACION GEOMETRICA */
+
+.about::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border:2px solid #3b3b3b;
+    border-radius:50%;
+    top:-60px;
+    right:-60px;
+}
+
+.about::after{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    border:2px solid #2c2c2c;
+    transform:rotate(45deg);
+    bottom:-50px;
+    left:-50px;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-weight:400;
+    color:white;
+}
+
+.about p{
+    color:#cfcfcf;
+}
+
+/* SECCIONES */
+
+section{
+    margin-bottom:70px;
+}
+
+.section-title{
+    font-size:1.8rem;
+    margin-bottom:25px;
+    font-weight:300;
+    border-left:4px solid #777;
+    padding-left:15px;
+}
+
+/* LINKS */
+
+.links{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.link-box{
+    background:#1a1a1a;
+    border:1px solid #2f2f2f;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+}
+
+.link-box a{
+    color:#dcdcdc;
+    text-decoration:none;
+}
+
+.link-box:hover{
+    border-color:#666;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:80px;
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#888;
+    font-size:0.9rem;
+    letter-spacing:1px;
+}
+
+</style>
 </head>
 <body>
 
-  <div class="card">
-    <h1>Yul Amir Villena Terreros</h1>
+<div class="container">
 
-    <p>
-      Hola, esta es mi página personal.
-    </p>
+    <!-- TITULO -->
 
-    <a href="https://www.tiktok.com/@luzusad4">Tiktok</a>
-    <a href="https://www.youtube.com/@lzusad">YouTube</a>
-    <a href="https://github.com/yulvillena-source">GitHub</a>
-  </div>
-    <p>
-      Hola, soy estudiante de Ciencias de la Computación en la Universidad Católica San Pablo. Me apasiona la tecnología y todo lo relacionado con el desarrollo de nuevas ideas y proyectos. Además de mi carrera, disfruto practicar vóley y natación, actividades que me ayudan a mantenerme activo y enfocado.
+    <header>
+        <h1>TU NOMBRE</h1>
+        <p>Ciencias de la Computación</p>
+    </header>
 
-      También me gusta tocar la guitarra, salir a caminar y descubrir nuevos lugares, ya que considero que los pequeños momentos y experiencias son una gran fuente de inspiración. Uno de mis mayores objetivos es terminar mi carrera profesional, conseguir un buen trabajo y, en el futuro, crear mi propio emprendimiento utilizando todo lo aprendido durante mi formación académica.
-    </p>
-  </div>
-    <p>
-      Pagina de otros amigos :p
-    </p>
+    <!-- INFORMACION PERSONAL -->
 
-    <a href="https://www.tiktok.com/@luzusad4">amigo 1</a>
-    <a href="https://www.youtube.com/@lzusad">amigo 2</a>
-    <a href="https://github.com/yulvillena-source">amigo 3</a>
+    <section class="about">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Escribe aquí tu información personal.
+            Puedes colocar una descripción sobre quién eres,
+            tus intereses, metas, estudios, proyectos,
+            hobbies y cualquier información que quieras compartir.
+        </p>
+
+    </section>
+
+    <!-- TUS LINKS -->
+
+    <section>
+
+        <h2 class="section-title">
+            Espacio Digital
+        </h2>
+
+        <div class="links">
+
+            <div class="link-box">
+                <a href="#">Link 1</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Link 2</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Link 3</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Link 4</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Link 5</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Link 6</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROFESORES -->
+
+    <section>
+
+        <h2 class="section-title">
+            Referentes y Mentores
+        </h2>
+
+        <div class="links">
+
+            <div class="link-box">
+                <a href="#">Profesor 1</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Profesor 2</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Profesor 3</a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">Profesor 4</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 • TU NOMBRE
+</footer>
+
 </body>
 </html>
