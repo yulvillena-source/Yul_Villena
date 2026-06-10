@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="description" content="Página personal de Yul Villena, estudiante de Ciencias de la Computación en la Universidad Católica San Pablo.">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="bDA33q6nQFGPoge_9OnCliVemITJ7uRao_IiQWpxqBs" />
@@ -9,6 +10,36 @@
 
 <style>
 
+/* CURSOS */
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.course-card{
+    background:#181818;
+    border-left:4px solid #8f8f8f;
+    padding:25px;
+    border-radius:15px;
+    transition:0.2s;
+}
+
+.course-card h3{
+    color:white;
+    margin-bottom:12px;
+    font-weight:500;
+}
+
+.course-card p{
+    color:#c5c5c5;
+    font-size:0.95rem;
+}
+
+.course-card:hover{
+    border-left-color:white;
+}
 *{
     margin:0;
     padding:0;
@@ -25,7 +56,7 @@ body{
 /* CONTENEDOR GENERAL */
 
 .container{
-    width:85%;
+    width:80%;
     max-width:1100px;
     margin:auto;
 }
@@ -147,7 +178,95 @@ footer{
     font-size:0.9rem;
     letter-spacing:1px;
 }
+/* COSAS VARIAS(muchas ideas, ya me dio pereza :c) */
 
+.linkedin a{
+    color:white;
+    font-weight:500;
+}
+.linkedin{
+    background:#163a5f;
+    border-color:#0a66c2;
+}
+.youtube{
+    background:#701010;
+    border-color:#aa1f1f;
+}
+
+.tiktok{
+    background:#121212;
+    border-color:#25f4ee;
+}
+
+.github{
+    background:#1f2428;
+    border-color:#4a5560;
+}
+
+.instagram{
+    background:#5e1f39;
+    border-color:#c13584;
+}
+
+.resource-box{
+    background:#1b1b1b;
+    border:1px solid #333;
+    border-radius:20px;
+    padding:30px;
+}
+
+.link-box{
+    transition:all .25s ease;
+}
+
+.link-box:hover{
+    transform:translateY(-3px);
+}
+
+/* PROFESORES */
+
+.professors{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.professor-card{
+    background:#1b1b1b;
+    border:1px solid #333;
+    border-radius:18px;
+    padding:20px 25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.professor-info h3{
+    color:white;
+    font-weight:500;
+    margin-bottom:5px;
+}
+
+.professor-info p{
+    color:#a8a8a8;
+    font-size:0.95rem;
+}
+
+.linkedin-btn{
+    background:#163a5f;
+    color:white;
+    text-decoration:none;
+
+    padding:10px 18px;
+    border-radius:10px;
+
+    transition:0.25s;
+}
+
+.linkedin-btn:hover{
+    background:#0a66c2;
+}
 </style>
 </head>
 <body>
@@ -209,26 +328,182 @@ footer{
 
         <p>
     </section>
-    <style>
+     <section>
 
-/* aquí empieza el CSS */
+     <h2 class="section-title">
+        Cursos y Formación
+     </h2>
 
-body{
-    background:#111111;
-    color:#e5e5e5;
-}
+     <div class="courses-grid">
 
-header h1{
-    font-size:4rem;
-}
+        <div class="course-card">
+            <h3>Lógica</h3>
+            <p>
+                Estudio de los principios del razonamiento, la
+                argumentación y el pensamiento crítico para 
+                analizar ideas y construir conclusiones de manera
+                coherente.
+            </p>
+        </div>
 
-.link-box{
-    border-radius:15px;
-}
+        <div class="course-card">
+            <h3>Introducción a la Vida Universitaria</h3>
+            <p>
+                Desarrollo de habilidades académicas, organización 
+                del tiempo y adaptación al entorno universitario 
+                para fortalecer el aprendizaje y el crecimiento personal.
+            </p>
+        </div>
 
-/* aquí termina el CSS */
+        <div class="course-card">
+            <h3>Fundamentos de Programación</h3>
+            <p>
+                Aprendizaje de algoritmos, estructuras de control 
+                y resolución de problemas mediante la programación,
+                desarrollando el pensamiento lógico y computacional.
+            </p>
+        </div>
 
-</style>
+        <div class="course-card">
+            <h3>Fundamentos Matemáticos para la Programación</h3>
+            <p>
+                Estudio de conceptos matemáticos esenciales para la 
+                computación, incluyendo lógica matemática, conjuntos, 
+                relaciones y herramientas para el análisis de problemas.
+            </p>
+        </div>
+
+        <div class="course-card">
+            <h3>Introducción a la Computación</h3>
+            <p>
+                Exploración de los fundamentos de las Ciencias de la 
+                Computación, sus áreas de aplicación y el impacto de 
+                la tecnología en la sociedad.
+            </p>
+        </div>
+
+        <div class="course-card">
+            <h3>Comunicación</h3>
+            <p>
+                Desarrollo de habilidades de expresión oral y escrita, 
+                enfocadas en la comunicación efectiva de ideas en 
+                contextos académicos y profesionales.
+            </p>
+        </div>
+     </div>
+
+    </section>
+
+    <section>
+
+     <h2 class="section-title">
+        Profesores 
+     </h2>
+
+        <div class="professors">
+
+          <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Kelly Vizconde La Motta</h3>
+                <p>Fundamentos de Programación</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/"
+               target="_blank"
+               class="linkedin-btn">
+               LinkedIn
+            </a>
+
+        </div>
+
+        <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Ernesto Cuadros Vargas</h3>
+                <p>Introducción a la Computación</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/ecuadrosv/"
+               target="_blank"
+               class="linkedin-btn">
+               LinkedIn
+            </a>
+
+        </div>
+
+                <div class="professors">
+
+          <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Sabrina Graciela Suarez Calcina</h3>
+                <p>Fundamentos Matemáticos para Computación</p>
+            </div>
+
+            <a href="LINK_LINKEDIN"
+               target="_blank"
+               class="linkedin-btn">
+               No LinkedIn 0_o
+            </a>
+
+        </div>
+
+                <div class="professors">
+
+          <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Yahaira Byrne Rivera</h3>
+                <p>Lógica</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/yahaira-byrne-rivera-274201221/"
+               target="_blank"
+               class="linkedin-btn">
+               LinkedIn
+            </a>
+
+        </div>
+
+                <div class="professors">
+
+          <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Ángel Rodríguez Cruz</h3>
+                <p>Comunicación I</p>
+            </div>
+
+            <a href="LINK_LINKEDIN"
+               target="_blank"
+               class="linkedin-btn">
+               No LinkedIn 0_o
+            </a>
+
+        </div>
+
+                <div class="professors">
+
+          <div class="professor-card">
+
+            <div class="professor-info">
+                <h3>Pierina Pacheco Leyton</h3>
+                <p>Introducción a la Vida Universitaria</p>
+            </div>
+
+            <a href="LINK_LINKEDIN"
+               target="_blank"
+               class="linkedin-btn">
+               No LinkedIn 0_o
+            </a>
+
+        </div>
+
+
+     </div>
+
+    </section>
  <!-- Mis LINKS 0_o -->
     <section>
 
@@ -242,20 +517,24 @@ header h1{
 
         <div class="links">
 
-            <div class="link-box resource-link">
-                <a href="https://www.youtube.com/@lzusad">Youtube</a>
+            <div class="link-box linkedin">
+                <a href="https://www.linkedin.com/in/yul-amir-villena-terreros-620567415/" target="_blank">LinkedIn</a>
             </div>
 
-            <div class="link-box resource-link">
-                <a href="https://www.tiktok.com/@luzusad4">Tiktok</a>
+            <div class="link-box youtube">
+                <a href="https://www.youtube.com/@lzusad">▶ YouTube</a target="_blank">
+            </div>   
+
+            <div class="link-box tiktok">
+                <a href="https://www.tiktok.com/@luzusad4">♫ TikTok</a target="_blank">
             </div>
 
-            <div class="link-box resource-link">
-                <a href="https://github.com/yulvillena-source">Github</a>
+            <div class="link-box github">
+                <a href="https://github.com/yulvillena-source"> <> GitHub</a target="_blank">
             </div>
 
-            <div class="link-box resource-link">
-                <a href="https://www.instagram.com/chocolombzz/">Instagram</a>
+            <div class="link-box instagram">
+                <a href="https://www.instagram.com/chocolombzz/"> 📷 Instagram</a target="_blank">
             </div>
 
         </div>
@@ -274,19 +553,19 @@ header h1{
         <div class="links">
 
             <div class="link-box">
-                <a href="https://angelfabianramosmunoz.github.io/">Angel</a>
+                <a href="https://angelfabianramosmunoz.github.io/">Angel</a target="_blank">
             </div>
 
             <div class="link-box">
-                <a href="https://bryanalencastre.github.io/Bryan-Alencastre/">Gabriel</a>
+                <a href="https://bryanalencastre.github.io/Bryan-Alencastre/">Gabriel</a target="_blank">
             </div>
 
             <div class="link-box">
-                <a href="https://ackyul.github.io/yoshuanunez.github.io/">Yoshua</a>
+                <a href="https://ackyul.github.io/yoshuanunez.github.io/">Yoshua</a target="_blank">
             </div>
 
             <div class="link-box">
-                <a href="https://jsalavaldez.github.io/">Salvadez</a>
+                <a href="https://jsalavaldez.github.io/">Salvadez</a target="_blank">
             </div>
 
         </div>
